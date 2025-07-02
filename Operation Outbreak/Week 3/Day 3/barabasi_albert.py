@@ -26,4 +26,4 @@ for new_node in range(m + 2, n + 1):
     for target in targets:
         nw.add_edges((new_node, target))
 
-run_simulation(model, nw, num_frames=10, show_labels=False)
+run_simulation(model, nw, num_frames=10, show_labels=False, display_stats=True)
