@@ -2,8 +2,10 @@ from simulation_network import run_simulation, Network
 from SVIR_network import model
 import random
 
-n = 50
+n = 100
 p = 0.05
+
+random.seed(120)
 
 nw = Network(model)
 nw.add_nodes(n)
