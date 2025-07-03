@@ -1,9 +1,10 @@
 from simulation_network import Model
 
-# Define the SIR model
+# Define the SVIR model
 model = Model("SIR Network Model")
 
 SUSCEPTIBLE = model.add_state("Susceptible", (52, 152, 219), default=True)
+VACCINATED  = model.add_state("Vaccinated", (241, 196, 15))
 INFECTED    = model.add_state("Infected",    (231, 76, 60))
 RECOVERED   = model.add_state("Recovered",   (142, 68, 173))
 
